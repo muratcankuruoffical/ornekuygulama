@@ -39,6 +39,6 @@ class CampusController extends Controller
 
         Mail::to($school->email)->send(new \App\Mail\Mail($details));
 
-        return response()->json(['message' => 'Campus Successfully Created','campus' => $campus], 401);
+        return response()->json(['message' => 'Campus Successfully Created','campus' => $campus], 201);
     }
 }

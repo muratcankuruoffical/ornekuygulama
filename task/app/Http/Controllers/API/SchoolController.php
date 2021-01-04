@@ -26,6 +26,6 @@ class SchoolController extends Controller
             'email' => $request->input('email'),
             'logo' => $logoName,
         ]);
-        return response()->json(['message' => 'School Successfully Created.', 'school' => $school], 401);
+        return response()->json(['message' => 'School Successfully Created.', 'school' => $school], 201);
     }
 }

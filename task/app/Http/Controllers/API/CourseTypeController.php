@@ -22,6 +22,6 @@ class CourseTypeController extends Controller
         $courseType = CourseType::create([
            'name' => $request->input('name'),
         ]);
-        return response()->json(['message' => 'Course Type Successfully Created', 'courseType' => $courseType], 401);
+        return response()->json(['message' => 'Course Type Successfully Created', 'courseType' => $courseType], 201);
     }
 }

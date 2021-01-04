@@ -28,7 +28,7 @@ class CourseController extends Controller
         //$course_type_id = $request->input('course_type_id');
         $course->coursetypes()->attach(1);
 
-        return response()->json(['message' => 'Course Successfully Created','course' => $course], 401);
+        return response()->json(['message' => 'Course Successfully Created','course' => $course], 201);
     }
 
 }
